@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {background-image: url(/pics/windowdbgi.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.score, .drewno, .ruda, .jedzenie, .ty {
+    position: absolute;
+    cursor: pointer;
+}
+
+.score {display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 400px;
+    background-color: rgb(156, 155, 155, .5) ;
+    
+    border: 2px solid black;
+}
+.scoreS img{
+    width: 30px;
+}
+.scoreS {display: flex;
+    align-items: center;
+    line-height: 30px;
+}
+.ty {
+    bottom: 5vh;
+    left: 7vw;
+
+}
+.drewno {
+    bottom: 270px;
+    right: 10vw;
+    
+
+}
+.ruda {
+    top: 10vh;
+    left: 20vw;
+
+}
+.jedzenie {
+    bottom: 10vh;
+    right: 300px;
+    
+}
+.jedzenie img {
+    max-height: 200px;
+    max-width: 200px;
+}
+.jedzenie .kapusta {transition: all 2s linear;
+    position: absolute;
+}
+.jedzenie .kapusta img {
+    max-width: 35px;
+    max-height: 35px;
+
+}
+.kapusta:nth-child(2) {
+    top: 55px;
+    left: 20px;
+
+}
+.kapusta:nth-child(3) {
+    top: 80px;
+    left: 10px;
+
+}
+.kapusta:nth-child(4) {
+    top: 100px;
+    left: 40px;
+
+}
+.kapusta:nth-child(5) {
+    top: 110px;
+    left: 80px;
+
+}
+
+.ruda img {
+    width: 300px;
+}
+.move {position: absolute;
+    background-image: url("/pics/oreIco.png");
+    background-position: center;
+    overflow: auto;
+    width: 25px;
+    height: 25px;
+    top: 125px;
+    left: 100px;
+    animation: move 4s both alternate infinite;
+}
+
+
+@keyframes move {
+    0% {
+        top: 125px;
+        left: 100px;
+    }
+    60% {
+        top: 120px;
+        left: 190px;
+    }
+    100% {
+        top: 100px;
+        left: 190px;
+
+    }
+}
+
+.none {
+    display: none !important;
+}
+
+.exit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.esc {padding: 20px;
+    width: 50vw;
+    height: 80vh;
+    background-color: brown;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+.escMenu {border: 2px solid black;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    
+}
+.mechaDoggo {
+    
+    padding-top: 60px;
+}
+.escMenu img {margin-right: auto;
+    margin-left: 5px;
+    justify-self: center;
+    max-width: 200px;
+    max-height: 100px;
+}
+.escMenu .resources{
+    max-width: 50px;
+    max-height: 50px;
+}
+.kup {margin-right: 5px;
+     width: 150px;
+    height: 50px;
+    font-size: 30px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px 2px;
+    cursor: pointer;
+    
+}
+
+.emblem {display: flex;
+    width: 200px;
+    height: 50px;
+    top: 0;
+    left: 0;
+
+}
+.em img {
+    max-width: 50px;
+    max-height: 50px;
+}
+.em {
+    width: 50px;
+    height: 50px;
+}
+
+
+.instructions {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+width: 50vw;
+height: 80vh;
+background-color: rgb(90, 54, 54);
+color: white;
+z-index: 1000;
+display: flex;
+flex-direction: column;
+padding: 20px;
+border: 5px solid black;
+justify-content: center;
+}
+.instructions span img {
+    vertical-align: middle;
+    max-width: 50px;
+    max-height: 50px;
+    
+}
+.instructions span {padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    border-bottom: cadetblue 2px solid;  
+}
+.instructions span:nth-child(1) {
+    flex-grow: 1;
+}
+.wrap {
+    filter: blur(2px);
+}
+.instructionsEsc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+

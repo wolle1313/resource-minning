@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Js practise/style.css">
+    <title>Java practise</title>
+</head>
+<body>
+    <div class="instructions">
+        <span>Twoim zadaniem w tej grze jest zdobycie materiałów tj. żywności, rudy i drewna, aby wykupić po jednej ze wszystkich trzech rzeczy które sprzedaje handlarz</span>
+        <span>Z kopalni zdobywasz +2 <img src="pics/oreIco.png"> rudy za każdym razem kiedy najedziesz na wyjeżdżającą z kopalni rudę</span>
+        <span>Z tartaku dostajesz +1 <img  src="pics/drewnoIco.png">za każde kliknięcie w tartak.</span> 
+        <span>Z farmy dostajesz +5 <img src="pics/kapusta.png"> za każdym kliknięciem w pojedyńczą kapustę</span>
+        <div class="instructionsEsc">X</div>
+    </div>
+    <div class="emblem">
+        <div class="dogE none em"><img src="pics/mechadoggo.jpg"></div>
+        <div class="zabawkaE none em"><img src="pics/zabawka.png"></div>
+        <div class="chatkaE none em"><img src="pics/chatka.jpg"></div>
+    </div>
+    <div class="esc none">
+        <div class="exit">X</div>
+        <div class="mechaDoggo escMenu">
+            <img src="pics/mechadoggo.jpg">
+            <span>500</span>
+            <img class="resources" src="pics/kapusta.png">
+            <span>200</span>
+            <img class="resources" src="pics/oreIco.png">
+            <span>0</span>
+            <img class="resources" src="pics/drewnoIco.png">
+            <button class="kup dogbuy">Kup go!</button>
+    </div>
+        <div class="zabawka escMenu">
+            <img src="pics/zabawka.png">
+            <span>0</span>
+            <img class="resources" src="pics/kapusta.png">
+            <span>400</span>
+            <img class="resources" src="pics/oreIco.png">
+            <span>200</span>
+            <img class="resources" src="pics/drewnoIco.png">
+            <button class="kup zabawkabuy">Kup go!</button>
+        </div>
+        <div class="chatka escMenu">
+            <img src="pics/chatka.jpg">
+            <span>100</span>
+            <img class="resources" src="pics/kapusta.png">
+            <span>150</span>
+            <img class="resources" src="pics/oreIco.png">
+            <span>400</span>
+            <img class="resources" src="pics/drewnoIco.png">
+            <button class="kup chatkabuy">Kup go!</button>
+        </div>
+    </div>
+
+<div class="wrap">
+    <div class="score">
+      <div class="jedzenieS scoreS">
+          <span>0</span>
+          <img src="pics/kapusta.png">
+    </div> 
+       <div class="rudaS scoreS">
+            <span class="rudaS">0</span>
+            <img src="pics/oreIco.png">
+    </div>
+        <div class="drewnoS scoreS">
+            <span>0</span>
+            <img src="pics/drewnoIco.png">
+    </div>
+ </div>
+    <div class="drewno"><img src="pics/sawmill.jpg"></div>
+    <div class="ruda"><img src="pics/ore mine.jpg">
+        <div class="move"></div>
+    </div>
+    <div class="jedzenie"><img src="pics/młyn.jpg">
+    <div class="kapusta none"><img src="pics/kapusta.png"></div>
+    <div class="kapusta none"><img src="pics/kapusta.png"></div>
+    <div class="kapusta none"><img src="pics/kapusta.png"></div>
+    <div class="kapusta none"><img src="pics/kapusta.png"></div>
+    </div>
+    <div class="ty">
+        <img width= 200px  src="pics/merchant.png">
+    </div>
+</div>
+
+    <script src="Js practise/java.js"></script>
+</body>
+</html>
